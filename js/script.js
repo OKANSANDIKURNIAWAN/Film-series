@@ -107,7 +107,7 @@ function createFilmSlide(film) {
   return `
     <div class="swiper-slide">
       <a class="film-card" href="film-detail.html?slug=${slug}">
-        <img src="${poster}" alt="${altText}" />
+        <img src="${poster}" alt="${altText}" loading="lazy" />
         <div class="film-title">${film.title}</div>
       </a>
     </div>`;
@@ -159,7 +159,7 @@ function renderTrendingCards() {
       <a class="trending-card ${isHighlight ? "highlight" : "side"}"
          href="film-detail.html?slug=${encodeURIComponent(film.slug)}">
         <div class="card-image-wrapper">
-          <img src="${film.poster || ""}" alt="${film.title}" />
+          <img src="${film.poster || ""}" alt="${film.title}" loading="lazy" />
           <span class="rank-badge rank-${rank}">${rank}</span>
         </div>
         <p>${film.title}</p>
