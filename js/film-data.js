@@ -1904,7 +1904,7 @@ const filmCatalog = [
   {
     slug: "lupa-daratan",
     title: "Lupa Daratan",
-    poster: "img/genre komedi/lupa_daratan.jpg",
+    poster: "img/genre komedi/lupa daratan.jpg",
     section: "hits",
     genres: ["Komedi", "Drama"],
     info: [
